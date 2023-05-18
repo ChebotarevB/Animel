@@ -1,3 +1,5 @@
+package abstracts;
+
 public abstract class Animal {
     private int weight;
     private int length;
@@ -8,17 +10,23 @@ public abstract class Animal {
     }
     public void run() {
         System.out.println("Я побежал!");
+        jump();
         }
 
+  protected void jump(){
+        System.out.println("Прыгаю!");
+    }
     public int getWeight() {
         return weight;
     }
 
     public int getLength() {
+
         return length;
     }
 
     public int getHeight() {
+
         return height;
     }
 
