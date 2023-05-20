@@ -6,7 +6,7 @@ public abstract class Animal {
     private int height;
 
     public void giveAVoice() {
-        System.out.println("Голос!");
+    System.out.println("Голос!");
     }
     public void run() {
         System.out.println("Я побежал!");
@@ -21,12 +21,10 @@ public abstract class Animal {
     }
 
     public int getLength() {
-
         return length;
     }
 
     public int getHeight() {
-
         return height;
     }
 
