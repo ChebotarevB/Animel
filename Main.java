@@ -1,11 +1,13 @@
+import abstracts.Animal;
 import extenders.Cat;
 import extenders.Dog;
+
 public class Main {
     public static void main(String[] args) {
         Cat cat = new Cat();
         Dog dog = new Dog();
 
-        // Animal animal = new Cat();
+        Animal animal = new Cat();
 
         dog.giveAVoice();
         cat.giveAVoice();
@@ -14,5 +16,9 @@ public class Main {
         dog.run();
         cat.jump();
         System.out.println("" + cat.getHeight() + cat.getLength() + cat.getWeight());
+        animal.giveAVoice();
+        animal.getSomeFood();
+        Cat cat2 = (Cat) animal;
+        cat2.jump();
     }
 }
